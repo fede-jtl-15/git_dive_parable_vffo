@@ -1,0 +1,19 @@
+assets
+
++-- visual
+| +-- models
+| +-- materials
+| +-- textures
+| +-- td
+
++-- audio
+| +-- ableton (live processing)
+| +-- pre-recorded
+|	| +-- sound
+|	| +-- music
+
++-- docs
+| +-- concept art
+|	| +-- editables
+|	| +-- renders
+| +-- texts
