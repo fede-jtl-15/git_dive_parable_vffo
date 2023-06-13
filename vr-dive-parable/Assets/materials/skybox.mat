@@ -119,14 +119,14 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _nadir_blend: 0.6
-    - _zenit_blend: 0.6
+    - _nadir_blend: 0.1
+    - _zenit_blend: 0.2
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _c_horizon: {r: 0.59075093, g: 0.7075472, b: 0.4498932, a: 0}
-    - _c_nadir: {r: 0.7962264, g: 0.96382934, b: 1, a: 0}
-    - _c_zenit: {r: 0.7169812, g: 0.5032396, b: 0.5032396, a: 0}
+    - _c_horizon: {r: 0.13015307, g: 0.14905336, b: 0.1509434, a: 0}
+    - _c_nadir: {r: 0, g: 0.046806984, b: 0.05660379, a: 0}
+    - _c_zenit: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
