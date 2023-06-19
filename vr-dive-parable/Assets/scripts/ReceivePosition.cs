@@ -5,6 +5,7 @@ using UnityEngine;
 public class ReceivePosition : MonoBehaviour
 {
         public OSC osc;
+        public Material mat;
 
 
     // Use this for initialization
@@ -13,6 +14,7 @@ public class ReceivePosition : MonoBehaviour
        osc.SetAddressHandler("/CubeX", OnReceiveX);
        osc.SetAddressHandler("/CubeY", OnReceiveY);
        osc.SetAddressHandler("/CubeZ", OnReceiveZ);
+       osc.SetAddressHandler("/noise_offset", OnReceiveOffset);
     }
     
     // Update is called once per frame
@@ -56,5 +58,13 @@ public class ReceivePosition : MonoBehaviour
         position.z = z;
 
         transform.position = position;
+    }
+
+    void OnReceiveOffset(OscMessage message) {
+        float offset = message.GetFloat(0);
+
+        mat.EnableKeyword("_noise_offset");
+
+        mat.SetFloat("_noise_offset", offset);
     }
 }
