@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: e58146d96d2b84d4d84c61646fdf6417,
     type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _noise_offset
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -112,7 +113,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _noise_density: 2.19
-    - _noise_offset: 3.03
+    - _noise_offset: 0.99397147
     - _scale: 93.9
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
