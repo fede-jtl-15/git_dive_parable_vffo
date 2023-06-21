@@ -46,7 +46,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.475
+    m_Value: 0.1
   clamp:
     m_OverrideState: 0
     m_Value: 0.05
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: 29
+    m_Value: -51
 --- !u!114 &6683729275824451619
 MonoBehaviour:
   m_ObjectHideFlags: 3
