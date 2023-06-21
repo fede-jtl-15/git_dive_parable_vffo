@@ -11,6 +11,7 @@ public class ReceiveVolume : MonoBehaviour
         public Volume v;
         private Bloom _bloom;
         private Vignette _vignette;
+        private FilmGrain _grain;
 
 
  
@@ -19,9 +20,11 @@ public class ReceiveVolume : MonoBehaviour
 
        osc.SetAddressHandler("/bloom_intensity", OnReceiveBloom);
        osc.SetAddressHandler("/vignette_intensity", OnReceiveVignette);
+       osc.SetAddressHandler("/grain_intensity", OnReceiveGrain);
        v = GetComponent<Volume>();
        v.profile.TryGet (out _bloom);
        v.profile.TryGet (out _vignette);
+       v.profile.TryGet (out _grain);
 
     }
     
@@ -43,6 +46,14 @@ public class ReceiveVolume : MonoBehaviour
         float _v_inensity = message.GetFloat(0);
 
         _vignette.intensity.value = _v_inensity;
+        //v.EnableKeyword("_bloom_intensity");
+        //v.SetFloat("_bloom_intensity", _b_inensity);
+    }
+
+    void OnReceiveGrain(OscMessage message) {
+        float _g_inensity = message.GetFloat(0);
+
+        _grain.intensity.value = _g_inensity;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
     }
