@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReceivePosition : MonoBehaviour
+public class ReceiveGeo_1 : MonoBehaviour
 {
         public OSC osc;
-        public Material mat;
+        //public Material mat;
         public GameObject Geo_1;
 
 
@@ -15,8 +15,8 @@ public class ReceivePosition : MonoBehaviour
        osc.SetAddressHandler("/CubeX", OnReceiveX);
        osc.SetAddressHandler("/CubeY", OnReceiveY);
        osc.SetAddressHandler("/CubeZ", OnReceiveZ);*/
-       osc.SetAddressHandler("/noise_offset", OnReceiveOffset);
-       osc.SetAddressHandler("/Geo_OnOff", OnReceiveGeoOnOff);
+       //osc.SetAddressHandler("/noise_offset", OnReceiveOffset);
+       osc.SetAddressHandler("/Geo_OnOff_1", OnReceiveGeoOnOff_1);
     }
     
     // Update is called once per frame
@@ -62,17 +62,17 @@ public class ReceivePosition : MonoBehaviour
         transform.position = position;
     }*/
 
-    void OnReceiveOffset(OscMessage message) {
+    /*void OnReceiveOffset(OscMessage message) {
         float offset = message.GetFloat(0);
 
         mat.EnableKeyword("_noise_offset");
 
         mat.SetFloat("_noise_offset", offset);
-    }
+    }*/
 
-    void OnReceiveGeoOnOff(OscMessage message) {
-        float G_OnOff = message.GetFloat(0);
-        if (G_OnOff == 0)
+    void OnReceiveGeoOnOff_1(OscMessage message) {
+        float G_OnOff_1 = message.GetFloat(0);
+        if (G_OnOff_1 == 0)
                 {
                     Geo_1.SetActive(false);
                 }
