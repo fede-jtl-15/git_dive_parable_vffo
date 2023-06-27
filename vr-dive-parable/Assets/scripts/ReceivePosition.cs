@@ -5,7 +5,7 @@ using UnityEngine;
 public class ReceivePosition : MonoBehaviour
 {
         public OSC osc;
-        public Material mat;
+        //public Material mat;
         public GameObject Geo_1;
 
 
@@ -16,7 +16,7 @@ public class ReceivePosition : MonoBehaviour
        osc.SetAddressHandler("/CubeY", OnReceiveY);
        osc.SetAddressHandler("/CubeZ", OnReceiveZ);*/
        osc.SetAddressHandler("/noise_offset", OnReceiveOffset);
-       osc.SetAddressHandler("/Geo_OnOff", OnReceiveGeoOnOff);
+       osc.SetAddressHandler("/Geo_OnOff_1", OnReceiveGeoOnOff);
     }
     
     // Update is called once per frame
@@ -62,13 +62,13 @@ public class ReceivePosition : MonoBehaviour
         transform.position = position;
     }*/
 
-    void OnReceiveOffset(OscMessage message) {
+    /*void OnReceiveOffset(OscMessage message) {
         float offset = message.GetFloat(0);
 
         mat.EnableKeyword("_noise_offset");
 
         mat.SetFloat("_noise_offset", offset);
-    }
+    }*/
 
     void OnReceiveGeoOnOff(OscMessage message) {
         float G_OnOff = message.GetFloat(0);
