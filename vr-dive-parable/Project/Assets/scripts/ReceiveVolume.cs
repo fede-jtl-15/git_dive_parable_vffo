@@ -8,7 +8,7 @@ public class ReceiveVolume : MonoBehaviour
 {
         public OSC osc;
 
-        public Volume v;
+        public Volume volume;
         private Bloom _bloom;
         private Vignette _vignette;
         private FilmGrain _grain;
@@ -21,10 +21,10 @@ public class ReceiveVolume : MonoBehaviour
        osc.SetAddressHandler("/gotas_bloom", OnReceiveBloom);
        osc.SetAddressHandler("/vignette_intensity", OnReceiveVignette);
        osc.SetAddressHandler("/gotas_grain", OnReceiveGrain);
-       v = GetComponent<Volume>();
-       v.profile.TryGet (out _bloom);
-       v.profile.TryGet (out _vignette);
-       v.profile.TryGet (out _grain);
+       volume = GetComponent<Volume>();
+       volume.profile.TryGet (out _bloom);
+       volume.profile.TryGet (out _vignette);
+       volume.profile.TryGet (out _grain);
 
     }
     
@@ -35,9 +35,9 @@ public class ReceiveVolume : MonoBehaviour
 
 
     void OnReceiveBloom(OscMessage message) {
-        float _b_inensity = message.GetFloat(0);
+        float gotas_bloom = message.GetFloat(0);
 
-        _bloom.intensity.value = _b_inensity;
+        _bloom.intensity.value = gotas_bloom;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
     }
@@ -45,7 +45,7 @@ public class ReceiveVolume : MonoBehaviour
     void OnReceiveVignette(OscMessage message) {
         float _v_inensity = message.GetFloat(0);
 
-        _vignette.intensity.value = _v_inensity;
+        //_vignette.intensity.value = _v_inensity;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
     }
@@ -53,7 +53,8 @@ public class ReceiveVolume : MonoBehaviour
     void OnReceiveGrain(OscMessage message) {
         float _g_inensity = message.GetFloat(0);
 
-        _grain.intensity.value = _g_inensity;
+        //intensity.m_Value
+        //_grain.intensity.value = _g_inensity;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
     }
