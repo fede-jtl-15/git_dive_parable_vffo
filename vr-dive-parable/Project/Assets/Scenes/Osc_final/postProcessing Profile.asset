@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-7711831753393775620
+=======
+--- !u!114 &-7833522309252656122
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,6 +13,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
@@ -152,6 +157,46 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.5
 --- !u!114 &-6863255773958338489
+=======
+  m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.69
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.735
+  scatter:
+    m_OverrideState: 1
+    m_Value: 0.705
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  dirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  dirtIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+  anamorphic:
+    m_OverrideState: 0
+    m_Value: 1
+  m_Resolution:
+    m_OverrideState: 1
+    m_Value: 2
+  m_HighQualityPrefiltering:
+    m_OverrideState: 1
+    m_Value: 1
+  m_HighQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-7532820101782247391
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,10 +220,17 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
+<<<<<<< Updated upstream
     m_Value: 0.208
   smoothness:
     m_OverrideState: 0
     m_Value: 0.2
+=======
+    m_Value: 0.109
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.153
+>>>>>>> Stashed changes
   roundness:
     m_OverrideState: 0
     m_Value: 1
@@ -191,7 +243,54 @@ MonoBehaviour:
   opacity:
     m_OverrideState: 0
     m_Value: 1
+<<<<<<< Updated upstream
 --- !u!114 &-2742723789122669635
+=======
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: postProcessing Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -7833522309252656122}
+  - {fileID: 6699214181302194650}
+  - {fileID: 1930059159336422026}
+  - {fileID: 5769108713592181458}
+  - {fileID: 647557727930776715}
+  - {fileID: 1164256580517717314}
+  - {fileID: -7532820101782247391}
+  - {fileID: 5422699345070039377}
+--- !u!114 &647557727930776715
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0775cbb206825d541bf6c0297ee524ca, type: 3}
+  m_Name: SplitToning
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0.0047710943, b: 0.084905684, a: 1}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.9552399, b: 0.9, a: 1}
+  balance:
+    m_OverrideState: 1
+    m_Value: -11
+--- !u!114 &1164256580517717314
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,7 +314,11 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
+<<<<<<< Updated upstream
           time: 0.13043477
+=======
+          time: 0.016872162
+>>>>>>> Stashed changes
           value: 0
           inSlope: 1
           outSlope: 1
@@ -224,7 +327,11 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
+<<<<<<< Updated upstream
           time: 0.9383178
+=======
+          time: 0.92537314
+>>>>>>> Stashed changes
           value: 1
           inSlope: 1
           outSlope: 1
@@ -381,7 +488,11 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
   m_SelectedCurve: 0
+<<<<<<< Updated upstream
 --- !u!114 &-2338685563916570978
+=======
+--- !u!114 &1930059159336422026
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,7 +507,11 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
+<<<<<<< Updated upstream
     m_Value: -0.42
+=======
+    m_Value: -0.51
+>>>>>>> Stashed changes
   xMultiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -408,6 +523,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   scale:
     m_OverrideState: 0
+<<<<<<< Updated upstream
     m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -432,6 +548,10 @@ MonoBehaviour:
   - {fileID: -6863255773958338489}
   - {fileID: -2338685563916570978}
 --- !u!114 &281521850724457104
+=======
+    m_Value: 2.78
+--- !u!114 &5422699345070039377
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,6 +560,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 090e3e4eec7ad5a47b778575e0ede947, type: 3}
   m_Name: Glitch
   m_EditorClassIdentifier: 
@@ -507,6 +628,28 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {fileID: 0}
 --- !u!114 &6612779267849961838
+=======
+  m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 0
+    m_Value: 0
+  contrast:
+    m_OverrideState: 1
+    m_Value: 22
+  colorFilter:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 0
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: -7
+--- !u!114 &5769108713592181458
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,7 +667,11 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
+<<<<<<< Updated upstream
     m_Value: 0.78
+=======
+    m_Value: 0.47
+>>>>>>> Stashed changes
   maximumVelocity:
     m_OverrideState: 0
     m_Value: 200
@@ -552,7 +699,11 @@ MonoBehaviour:
   m_SampleCount:
     m_OverrideState: 0
     m_Value: 8
+<<<<<<< Updated upstream
 --- !u!114 &8089807544409965189
+=======
+--- !u!114 &6699214181302194650
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -561,6 +712,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
@@ -598,3 +750,21 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 0
     m_Value: 1
+=======
+  m_Script: {fileID: 11500000, guid: 5a6b00fcf518bb94a90b408492e07b44, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 1
+  type:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.338
+  response:
+    m_OverrideState: 0
+    m_Value: 0.8
+  texture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+>>>>>>> Stashed changes
