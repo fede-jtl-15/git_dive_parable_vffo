@@ -71,6 +71,7 @@ MonoBehaviour:
     PublicKeyToken=null
   - Kino.PostProcessing.Recolor, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
+<<<<<<< Updated upstream
   - Kino.PostProcessing.Sharpen, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   - Kino.PostProcessing.Overlay, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
@@ -78,6 +79,13 @@ MonoBehaviour:
   - Kino.PostProcessing.Slice, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   - Kino.PostProcessing.TestCard, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+=======
+  - Kino.PostProcessing.Slice, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Kino.PostProcessing.Overlay, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Kino.PostProcessing.Sharpen, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+>>>>>>> Stashed changes
     PublicKeyToken=null
   - Kino.PostProcessing.Utility, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null

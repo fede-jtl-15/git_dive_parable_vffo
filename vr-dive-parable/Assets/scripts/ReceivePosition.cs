@@ -14,9 +14,9 @@ public class ReceivePosition : MonoBehaviour
        /*osc.SetAddressHandler( "/CubeXYZ" , OnReceiveXYZ );
        osc.SetAddressHandler("/CubeX", OnReceiveX);
        osc.SetAddressHandler("/CubeY", OnReceiveY);
-       osc.SetAddressHandler("/CubeZ", OnReceiveZ);*/
+       osc.SetAddressHandler("/CubeZ", OnReceiveZ);
        osc.SetAddressHandler("/noise_offset", OnReceiveOffset);
-       osc.SetAddressHandler("/Geo_OnOff_1", OnReceiveGeoOnOff);
+       osc.SetAddressHandler("/Geo_OnOff_1", OnReceiveGeoOnOff);*/
     }
     
     // Update is called once per frame
@@ -70,14 +70,14 @@ public class ReceivePosition : MonoBehaviour
         mat.SetFloat("_noise_offset", offset);
     }*/
 
-    void OnReceiveGeoOnOff(OscMessage message) {
+    /*void OnReceiveGeoOnOff(OscMessage message) {
         float G_OnOff = message.GetFloat(0);
         if (G_OnOff == 0)
                 {
                     Geo_1.SetActive(false);
                 }
                 else  Geo_1.SetActive(true);
-     }
+     }*/
         
  }
 
