@@ -13,11 +13,7 @@ public class ReceiveVolume : MonoBehaviour
         private Vignette _vignette;
         private FilmGrain _grain;
         private ChromaticAberration _chromaticAberration;
-        private Exposure _exposure;
-        //public Volume _glitch;
-        
-
-
+        //private Exposure _exposure;        
  
     // Use this for initialization
     void Start () {
@@ -25,15 +21,14 @@ public class ReceiveVolume : MonoBehaviour
        osc.SetAddressHandler("/gotas_bloom", OnReceiveBloom);
        osc.SetAddressHandler("/vignette_intensity", OnReceiveVignette);
        osc.SetAddressHandler("/gotas_grain", OnReceiveGrain);
-       osc.SetAddressHandler("/gotas_chrom_aberration", OnReceiveChAberration);
-       osc.SetAddressHandler("/gotas_exposure", OnReceiveExposure);
-       //osc.SetAddressHandler("/gotas_g_jitter", OnReceiveJitter);
+       //osc.SetAddressHandler("/gotas_chrom_aberration", OnReceiveChAberration);
+       //osc.SetAddressHandler("/gotas_exposure", OnReceiveExposure);
        volume = GetComponent<Volume>();
        volume.profile.TryGet (out _bloom);
        volume.profile.TryGet (out _vignette);
        volume.profile.TryGet (out _grain);
        volume.profile.TryGet (out _chromaticAberration);
-       volume.profile.TryGet (out _exposure);
+       //volume.profile.TryGet (out _exposure);
        //_glitch = GetComponent<Volume>();
     }
     
@@ -66,30 +61,22 @@ public class ReceiveVolume : MonoBehaviour
         //v.SetFloat("_bloom_intensity", _b_inensity);
     }
 
-    void OnReceiveChAberration(OscMessage message) {
+    /*void OnReceiveChAberration(OscMessage message) {
         float _chrA_inensity = message.GetFloat(0);
 
         //intensity.m_Value
         _chromaticAberration.intensity.value = _chrA_inensity;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
-    }
+    }*/
 
-    void OnReceiveExposure(OscMessage message) {
+    /*void OnReceiveExposure(OscMessage message) {
         float _exp_compensation = message.GetFloat(0);
 
         //intensity.m_Value
         _exposure.fixedExposure.value = _exp_compensation;
         //v.EnableKeyword("_bloom_intensity");
         //v.SetFloat("_bloom_intensity", _b_inensity);
-    }
-
-    /*void OnReceiveJitter(OscMessage message) {
-        float _jitter = message.GetFloat(0);
-
-        //intensity.m_Value
-        _glitch.jitter.value = _jitter;
-        //v.EnableKeyword("_bloom_intensity");
-        //v.SetFloat("_bloom_intensity", _b_inensity);
     }*/
+
 }
