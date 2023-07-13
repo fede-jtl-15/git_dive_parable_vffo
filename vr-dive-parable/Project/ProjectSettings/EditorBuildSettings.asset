@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/vr_parable.unity
+    path: Assets/SCENES!/vr_parable.unity
     guid: 41a8faf8eac11244ead427dc3f53ef78
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Osc_final.unity
+    path: Assets/SCENES!/FINAL SCENE (ONLY FEDE TOUCH IT).unity
     guid: ef00cb4aefbe10e47ba96e8374cb0fe3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0f05ce94b54a63144a9fd562a96c059b, type: 2}
