@@ -780,6 +780,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7699157608234482787, guid: 1dae02c156c41384ba37f3f5e999368a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 590.7395
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699157608234482787, guid: 1dae02c156c41384ba37f3f5e999368a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 467.80133
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699157608234482787, guid: 1dae02c156c41384ba37f3f5e999368a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 427.66013
+      objectReference: {fileID: 0}
     - target: {fileID: 7699157608901249961, guid: 1dae02c156c41384ba37f3f5e999368a, type: 3}
       propertyPath: m_Name
       value: ISLAND
@@ -1262,14 +1274,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918285773}
-  m_LocalRotation: {x: 0.00968402, y: 0.53136384, z: -0.0060747727, w: 0.84706664}
+  m_LocalRotation: {x: -0.009985512, y: -0.48680195, z: 0.0055653187, w: -0.8734376}
   m_LocalPosition: {x: 675, y: 26.1176, z: 193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 1.31, y: 64.2, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.31, y: -301.735, z: 0}
 --- !u!1 &2012787166
 GameObject:
   m_ObjectHideFlags: 0
